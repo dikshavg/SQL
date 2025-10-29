@@ -1,0 +1,96 @@
+
+**Structured Query language:(SQL)
+->SQL is used to communicate or interact or deals with the Database software.
+==================================================================================
+*Data:
+->data is a raw fact which describes the Attributes or properties of an Entity.
+==================================================================================
+*Database:
+->is a place or medium or container in which we store the data in a Systematics and organized manner
+->we can perform some Operations on Database:
+i)create/Insert
+ii)Read/Retrieve
+iii)Update/Modify
+iv)Drop/Delete
+->these Operations are Universally referred as 'CRUD' operations
+===================================================================================
+*Database Management System(DBMS):
+->DBMS is a Software which is used to maintain and the manage the database
+->DBMS stores the data in the form of files.
+->it provides 2 important features: Security, Authorization.
+->we use Query language to communicate or Interact with DBMS software.
+
+**Types of DBMS/database:
+1)Network DBMS
+2)Hierarchical DBMS
+3)Relational DBMS 
+4)Object Oriented DBMS
+
+**Relational Database management System(RDBMS):
+->DBMS is a type of DBMS software which stores the data in the form of tables.
+->it provides 2 important features called Security and Authorization
+->we use Structured Query language(SQL) to communicate or interact with RDBMS.
+
+**Relational Model:
+->Relational model was introduces by E.F Codd in 1970.
+->any DBMS software which follows relational model then it will became RDBMS
+->E.F codd gave a main rule in RDBMS that is Everything should be store in the form of 'Tables'.
+
+*Table:->
+->Table is logical organization of a data which consists of Rows, columns and Cell
+
+**Rules of E.F codd:
+1)The Data entered into a cell must be Single value data to prevent 'data loss'.
+2)In RDBMS Everything should be stored in the form of tables including 'Metadata'.
+
+*Metadata:details of the data is known as Metadata.
+->Metadata can stored into Metadata and Metatable will be generated Automatically by Software itself. 
+
+3)According to e.f codd we can store data into multiple tables,if needed we can establish connection between the table using "key-attribute".
+4)we can validate the data by 2 steps:
+->by assigning datatypes
+->by assigning constrains for the columns.
+======================================================================================================================================================
+Datatype:
+->are used to determine what type or kind of the data can be stored to a particular column or memory location.
+*types of Datatype:
+1)Char
+2)Varchar/varchar2
+3)Date
+4)Large Object:
+->Character large object
+->Binary large object
+
+1)Char:
+->char datatype accepts the following:
+'A-Z','a-z','0-9','&','$',------'Space' or combination of all
+Synatx: char(size)
+->whenever we use char datatype passing size as an argument is mandatory
+->Size determines the no. of memory blocks
+->Maximun size can 2000
+->character must always be enclosed within ''
+->it follows fixed length memory allocation
+ex:pan,ifsc,id etc
+
+2)Varchar:
+->char datatype accepts the following:
+'A-Z','a-z','0-9','&','$',------'Space' or combination of all
+Synatx: varchar(size)
+->whenever we use char datatype passing size as an argument is mandatory
+->Size determines the no. of memory blocks
+->Maximun size can 2000
+->character must always be enclosed within ''
+->it follows variable length memory allocation 
+ex:name,address,job,amilid
+
+*varchar2:
+->it is updated version of varchar datatype
+->we can store up to 4000 character
+
+3)Date:
+->it is used to stored only date to a particular column
+->it accepts only oracle specify date formats and  date must be enclosed within ''
+Synatx: Date
+->oracle specified date format:
+1)'DD-Mon-YYYY'
+2)'DD-Mon-YY'
