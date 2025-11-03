@@ -1,44 +1,59 @@
 *Number:
-number datatype accepts only numeric values that is '0-9',number can be a +ve or -ve.
-Syntax: Number(Precision[,Scale])
+->number datatype accepts only numeric-values that is '0-9' number can be a +ve or -ve.
+Syntax: number(precision[,scale])
+note:
+precision: it is used to determine total no of int digits used in a value.
+->max precision can be 38
+Scale: it is used to determine total no of decimal digits used in a value and scale block gets created within the precision
+->The max-Scale can be 127
+->Scale is a Optional, So the default value of Scale is 0.
+ex: number(5,2):999.99
 
-Note:
-Precision: it is used to determine total number of int digit used in a value.
-->the maximum precision can be 38
-
-Scale: it is used to determine total number of decimal digits used in a value and scale block gets created within the precision.
-->the maximum Scale can be 127
-->Scale is Optional, so the default value of scale is 0
-ex: number(3):999
-number(5,2):999.99
-number(7,3):9999.999
-number(2,5):.00099
-number(3,3):.999
-==============================================================================================================================================
-4)Large object:
-1)Character large Object:
+**Large Objects:
+1)character large object:
 ->it is used to store character up to 4GB of size
-2)Binary large Object:
-->it is used to store binary values of images, mP3, mP4 and games up to 4GB of size.
-=====================================================================================================
-*Constraints: 
-->are the rule assign to column for extra validation
 
-**Types of constraints:
+2)Binary large Object:
+->it is used to store Binary values of images,MP3,MP4 and games up to 4GB of size
+
+*Constraints:
+->are the rule assign to a column for Extra validation
+ 
+**Types of Constraints:
 1)Unique
-2)not null
-3)check
-4)primary key
-5)Foreign key/referential integrity constant
+2)Not null
+3)Check
+4)Primary key
+5)Foreign key/Referential integrity constant
 
 1)Unique:
-->it is used to avoid repeated or duplicate values.
+->it is used to avoid repeated or duplicated values
 
 2)Not null:
-->it is used to avoid null values(Empty cell)
-
-*Character of null:
-1)null means nothing or empty
-2)0 is not a null value
+->it is used to avoid null values.
+1)Null means nothing or Empty
+2)O is not null value
 3)null doesn't occupies any memory
-5)100+Null=Null
+4)100+null=null
+
+3)Check:
+->check is extra validation with a condition
+->if the given condition is true then the value will be accepted else rejected
+check(condition)
+ 
+4)primary key:
+->is a constraints which is used to identify a record uniquely from the table
+character of Primary key:
+->primary key will not accept unique
+->primary key will not accept null values
+->its a combination of unique and not-null constraint.
+->we can have only 1 primary key in a table
+
+5)Foreign key:
+->used to establish the connection between the tales and it is also known as referential integrity constant
+->can accept unique
+->can accept not null
+->its not a combination of unique & not-null.
+->we can have multiple foreign keys in table.
+
+
