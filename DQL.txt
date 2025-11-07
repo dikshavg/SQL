@@ -1,0 +1,58 @@
+Overview of SQL Statement:
+1)Data Definition language(DDL)
+2)Data Manipulation language(DML)
+3)transactions control language(TCL)
+4)Data control language(DCL)
+5)Data Query language(DQL)
+===========================================================
+1)Data Query language(DQL):
+->DQL is used to fetch or retrieve the data from the data base
+->it has 4 statements:
+i)select
+ii)projection
+iii)selection
+iv)joins
+
+i)select:
+->it is used  to retrieve the data from the table and display it
+
+ii)projection:
+->it is process of retrieving the data by selecting only columns
+syntax:
+select * /column_name/Expression
+from table_name; 
+
+*order of execution:
+1)from clause
+2)select clause
+
+*Expression: it is the statement which gives the result
+->its a combination of operators and operand
+
+*Operand: it is the value which is pass to the Operator
+
+*Operator: it is a Special Symbols which perform some OPerations
+
+iii)Selection:
+it is the process of selecting the both column and row
+->to select particular record we need to write a condition, to write a condition we use where clause
+
+*where clause:
+is use to filter the records 
+->where clause execute row by row
+->in where clause we write filter condition
+->to write multiple condition we go for logical operators
+->and it have to return Boolean values
+
+*logical Operator:
+1)AND
+2)OR
+3)NOT 
+
+1)AND: it is used whenever we have to satisfy multiple conditions
+2)OR: it is used whenever we have satisfy at least 1 of the condition
+3)NOT: it is used when ever we have to reject the particular condition
+
+
+
+
