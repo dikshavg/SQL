@@ -1,0 +1,42 @@
+SQL> create table product
+  2  (
+  3  PID number(4) primary key,
+  4   Pname varchar(20) not null,
+  5  Price number(8,2) not null check(Price>0),
+  6  Discount number(8,2)
+  7  );
+
+Table created.
+
+SQL> DESC product;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ PID                                       NOT NULL NUMBER(4)
+ PNAME                                     NOT NULL VARCHAR2(20)
+ PRICE                                     NOT NULL NUMBER(8,2)
+ DISCOUNT                                           NUMBER(8,2)
+==============================================================================================
+
+SQL> Create table Customer
+  2  (
+  3  CID number(4) primary key,
+  4  Cname varchar(20) not null,
+  5  Cno number(10) not null unique check (length(Cno)=10),
+  6  Mail varchar(30) Null Unique,
+  7  Address varchar(30) not null,
+  8  PID number(4),
+  9  Constraint PID_FK foreign key(PID)
+ 10  references Product(PID)
+ 11  );
+
+Table created.
+
+SQL> DESC Customer;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ CID                                       NOT NULL NUMBER(4)
+ CNAME                                     NOT NULL VARCHAR2(20)
+ CNO                                       NOT NULL NUMBER(10)
+ MAIL                                               VARCHAR2(30)
+ ADDRESS                                   NOT NULL VARCHAR2(30)
+ PID                                                NUMBER(4)
