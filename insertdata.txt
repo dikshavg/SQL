@@ -1,0 +1,40 @@
+########################DATA MANIPULATION LANGUAGE####################(INSERT)***
+SQL> desc product;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ PID                                       NOT NULL NUMBER(4)
+ PNAME                                     NOT NULL VARCHAR2(20)
+ PRICE                                     NOT NULL NUMBER(8,2)
+ DISCOUNT                                           NUMBER(8,2)
+
+
+SQL> insert into product values(1,'iphone',65000,null);
+
+1 row created.
+
+SQL> insert into product values(2,'Samsung M31s',25000,500);
+
+1 row created.
+
+SQL> insert into product values(3,'realme 15T',26000,1000);
+
+1 row created. 
+
+SQL> insert into product values(4,'oppo reno14',44999,2000);
+
+1 row created.
+
+SQL> insert into product values(5,'nothing',26885,1000);
+
+1 row created.
+
+SQL> select * from product;
+
+       PID PNAME                     PRICE   DISCOUNT
+---------- -------------------- ---------- ----------
+         1 iphone                    65000
+         2 Samsung M31s              25000        500
+         3 realme 15T                26000       1000
+         4 oppo reno14               44999       2000
+         5 nothing                   26885       1000
+==============================================================================
